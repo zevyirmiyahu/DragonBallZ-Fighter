@@ -1,7 +1,7 @@
 # Dragon Ball Z: Fighter
 
 ## Description: 
-Dragon Ball Z fighting game written in Java. The player needs to fight against Zamasu and save the spirit world.
+Dragon Ball Z fighting game written in Java. The powerful Zamasu has returned! The player needs to defeat Zamasu and save the spirit world from destruction.
 
 ## About Development:
 Every aspect of this game was hand made. All code was written in Java. The game menu and the game over screen pictures where drawn using the wacom intuos drawing pad. The sprites were created using Aseprite [https://www.aseprite.org/](https://www.aseprite.org/). The AI for enemy (Zamasu) was constructed mostly with random numbers and distance from goku. The fightAI() method calls 5 other helper methods punchAI(), moveAI(), shootAI(), jumpAI(), and teleportAI(). This gives a challenge and real feel of combat to the AI.
