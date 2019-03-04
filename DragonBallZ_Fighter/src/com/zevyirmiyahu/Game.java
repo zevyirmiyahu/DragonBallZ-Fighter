@@ -161,15 +161,19 @@ public class Game extends Canvas implements Runnable {
 	
 	// if player decides to play again
 	public void reinitialize() {
-		level.clearAll();
-		level = new Level();
-		player = new Player(4, 10, input);
-		level.add(player);
-		openingScene = new OpeningScene();
+		if(resetGame) {
+			level.clearAll();
+			level = new Level();
+			player = new Player(4, 10, input);
+			level.add(player);
+			openingScene = new OpeningScene();
+			resetGame = false;
+		}
 	}
 	
 	public void update() {
 		if(state.equals(STATE.MENU)) {
+			resetGame = true;
 			startMenu.update();
 		}
 		else if(state.equals(STATE.OPENING)) {
