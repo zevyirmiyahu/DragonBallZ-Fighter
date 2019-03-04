@@ -41,6 +41,7 @@ public class Level {
 		players.remove(0);
 		kingKais.remove(0);
 		enemies.remove(0);
+		cloud.remove(0);
 	}
 	
 	public static Player getPlayer(int index) {
@@ -118,10 +119,7 @@ public class Level {
 	}
 	
 	private void addCloud() {
-		System.out.println("cloud x = " + ((int)cloud.get(0).getX() >> 4));
-		for(int i = 0; i < cloud.size(); i++) {
-			if(cloud.get(i).getX() < -1100 && cloud.size() < 2) add(new Clouds(26, 0));
-		}
+		if(cloud.get(i).getX() < -1100 && cloud.size() == 1) add(new Clouds(26, 0));
 	}
 	
 	public void add(Entity e) {
