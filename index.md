@@ -4,7 +4,7 @@
 Dragon Ball Z fighting game written in Java. The powerful Zamasu has returned! The player needs to defeat Zamasu and save the spirit world from destruction. The source code for the game can be found here: [Source Code](https://github.com/zevyirmiyahu/DragonBallZ-Fighter/tree/master/DragonBallZ_Fighter/src/com/zevyirmiyahu)
 
 ## About Development:
-Every aspect of this game was hand made. All code was written in Java. The game menu and the game over screen pictures where drawn using the wacom intuos drawing pad. The sprites were created using Aseprite [https://www.aseprite.org/](https://www.aseprite.org/). The AI for enemy (Zamasu) was constructed mostly with random numbers and distance from goku. The fightAI() method calls 5 other helper methods punchAI(), moveAI(), shootAI(), jumpAI(), and teleportAI(). This gives a challenge and real feel of combat to the AI.
+Every aspect of this game was hand made. All code was written in Java. The game menu and the game over screen pictures where drawn using the wacom intuos drawing pad. The sprites were created using Aseprite [https://www.aseprite.org/](https://www.aseprite.org/). The AI for enemy (Zamasu) was constructed mostly with random numbers and calculating distance from player (Goku). The fightAI() method calls 5 other private helper methods: punchAI(), moveAI(), shootAI(), jumpAI(), and teleportAI(). This gives a challenge and real feel of combat to the AI.
 
 
 ## Download the Game
